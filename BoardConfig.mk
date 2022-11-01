@@ -125,6 +125,7 @@ TW_EXCLUDE_TWRPAPP := true
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_MAX_BRIGHTNESS := 2047
 TW_DEFAULT_BRIGHTNESS := 1200
+TW_EXCLUDE_DEFAULT_USB_INIT := true
 
 # Debug
 TWRP_INCLUDE_LOGCAT := true
