@@ -54,6 +54,9 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
         export FOX_DELETE_AROMAFM=1
         export FOX_BUGGED_AOSP_ARB_WORKAROUND="1616300800"; # Sun 21 Mar 04:26:40 GMT 2021
 
+	export TARGET_DEVICE_ALT="evergreen,opal"
+	export OF_TARGET_DEVICES="evergo,evergreen,opal"
+
 	# Magisk
 	export FOX_USE_SPECIFIC_MAGISK_ZIP=~/Magisk/Magisk-v25.2.zip
 
