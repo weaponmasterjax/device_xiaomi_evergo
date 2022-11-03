@@ -35,12 +35,17 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 AB_OTA_UPDATER := true
 
 AB_OTA_PARTITIONS += \
-    system \
-    vendor \
-    product \
     boot \
+    dtbo \
+    lk \
+    preloader \
+    product \
+    system \
+    vbmeta \
+    vbmeta_system \
     vbmeta_vendor \
-    vbmeta_system
+    vendor \
+    vendor_boot
 
 # Android Verified Boot
 BOARD_AVB_ENABLE := true
