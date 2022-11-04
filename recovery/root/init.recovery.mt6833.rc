@@ -37,7 +37,7 @@ on post-fs
     start mtk.plpath.utils.link
 
     # Start the Boot HAL
-    start boot-hal-1-1
+    start boot-hal-1-2
 
 service mtk.plpath.utils.link /system/bin/mtk_plpath_utils
     class main
