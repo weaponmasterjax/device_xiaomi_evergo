@@ -77,9 +77,6 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	# ensure that /sdcard is bind-unmounted before f2fs data repair or format
 	export OF_UNBIND_SDCARD_F2FS=1
 
-	# instruct magiskboot v24+ to always patch the vbmeta header when patching the recovery/boot image; do *not* remove!
-        export OF_PATCH_VBMETA_FLAG="1"
-
 	# no special MIUI stuff
         export OF_VANILLA_BUILD=1
 	export OF_NO_MIUI_PATCH_WARNING=1
