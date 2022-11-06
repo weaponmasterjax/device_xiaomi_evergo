@@ -74,6 +74,13 @@ service gatekeeper-1-0 /system/bin/android.hardware.gatekeeper@1.0-service
     disabled
     seclabel u:r:recovery:s0
 
+service unified-script /system/bin/unified-script.sh
+    user root
+    group root
+    disabled
+    oneshot
+    seclabel u:r:recovery:s0
+
 on property:hwservicemanager.ready=true
     start teei_daemon
     start keymaster-4-1-beanpod
@@ -102,3 +109,5 @@ on property:twrp.decrypt.done=true
 
 on boot
     start health-hal-2-1
+    chmod 0777 /system/bin/unified-script.sh
+    start unified-script
