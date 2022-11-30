@@ -28,5 +28,5 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 PRODUCT_DEVICE := evergo
 PRODUCT_NAME := twrp_evergo
 PRODUCT_BRAND := Redmi
-PRODUCT_MODEL := Redmi Note 11T 5G
+PRODUCT_MODEL := Redmi Note 11(T) 5G
 PRODUCT_MANUFACTURER := xiaomi
