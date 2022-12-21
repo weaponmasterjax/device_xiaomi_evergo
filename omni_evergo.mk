@@ -21,12 +21,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 # Inherit from evergo device
 $(call inherit-product, device/xiaomi/evergo/device.mk)
 
-# Inherit some common TWRP stuff.
-$(call inherit-product, vendor/twrp/config/common.mk)
+# Inherit some common PBRP stuff.
+$(call inherit-product, vendor/pb/config/common.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := evergo
-PRODUCT_NAME := twrp_evergo
+PRODUCT_NAME := omni_evergo
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 11T 5G
 PRODUCT_MANUFACTURER := xiaomi
