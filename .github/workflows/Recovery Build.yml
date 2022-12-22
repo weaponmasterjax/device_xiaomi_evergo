@@ -164,7 +164,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Upload to Mirror in case the last one didnt work
       run: |
-        curl -T workspace/out/target/product/*.zip https://oshi.at/${FILENAME}/${TIMEOUT} > mirror.txt
+        curl -T workspace/out/target/product/*.zip https://oshi.at/${FILENAME}/66666> mirror.txt
         cat ./mirror.txt
         type mirror.txt
         cat mirror.txt
