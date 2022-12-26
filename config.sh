@@ -27,7 +27,7 @@ export EXTRA_CMD="export OF_MAINTAINER=sd369888(AMD,YES)"
 # Magisk
 ## Use the Latest Release of Magisk for the OrangeFox addon
 export OF_USE_LATEST_MAGISK=true
-
+export echo "AMD,YES!"
 # Not Recommended to Change
 export SYNC_PATH="$HOME/work" # Full (absolute) path.
 export USE_CCACHE=1
