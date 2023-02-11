@@ -1,8 +1,0 @@
-service vendor.vibrator-evergo /vendor/bin/hw/android.hardware.vibrator-service.evergo
-    class hal
-    user system
-    group system input
-
-on post-fs
-    chown system system /sys/bus/i2c/drivers/awinic_haptic/9-005a/f0_save
-    chown system system /sys/bus/i2c/drivers/awinic_haptic/9-005a/osc_save
