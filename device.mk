@@ -81,5 +81,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
 
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator-service.evergo
+
 # VNDK
 PRODUCT_TARGET_VNDK_VERSION := 31
