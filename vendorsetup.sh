@@ -51,7 +51,6 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_ENABLE_LPTOOLS=1
 	export FOX_USE_NANO_EDITOR=1
         export OF_QUICK_BACKUP_LIST="/boot;/data;"
-        export FOX_DELETE_AROMAFM=1
         export FOX_BUGGED_AOSP_ARB_WORKAROUND="1616300800"; # Sun 21 Mar 04:26:40 GMT 2021
 
 	export TARGET_DEVICE_ALT="evergreen,opal"
@@ -72,15 +71,15 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
 	# R11.1
 	export FOX_VERSION="R11.1_0"
-	export OF_MAINTAINER="Sushrut1101"
+	export OF_MAINTAINER="weaponmasterjax(AMD,YES!)"
 	export FOX_VARIANT="S"
 
 	# ensure that /sdcard is bind-unmounted before f2fs data repair or format
 	export OF_UNBIND_SDCARD_F2FS=1
 
 	# no special MIUI stuff
-        export OF_VANILLA_BUILD=1
-	export OF_NO_MIUI_PATCH_WARNING=1
+        export OF_VANILLA_BUILD=0
+	export OF_NO_MIUI_PATCH_WARNING=0
 
 	# Dynamic Partitions Size
 	export OF_DYNAMIC_FULL_SIZE=9126805504
