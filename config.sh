@@ -20,10 +20,6 @@ export OUTPUT="OrangeFox*.zip"
 DEPS=(
     "https://github.com/OrangeFoxRecovery/Avatar.git misc"
 )
-
-# Extra Command
-export EXTRA_CMD="export OF_MAINTAINER=sd369888(AMD,YES)"
-
 # Magisk
 ## Use the Latest Release of Magisk for the OrangeFox addon
 export OF_USE_LATEST_MAGISK=true
