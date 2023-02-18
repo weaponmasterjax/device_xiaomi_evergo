@@ -44,7 +44,7 @@ if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
 		export OF_MAINTAINER="weaponmasterjax(AMD,YES)"
 		export FOX_VERSION=R11.1_1
 		export FOX_BUILD_TYPE="Beta"
-		export FOX_VARIANT="S"
+		export FOX_VARIANT="MIUI13.0.8"
 
 		# ensure that /sdcard is bind-unmounted before f2fs data repair or format
 		export OF_UNBIND_SDCARD_F2FS=1
